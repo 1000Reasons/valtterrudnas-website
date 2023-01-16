@@ -623,6 +623,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -659,6 +663,10 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -671,6 +679,11 @@ video {
 .bg-nord-7 {
   --tw-bg-opacity: 1;
   background-color: rgb(143 188 187 / var(--tw-bg-opacity));
+}
+
+.bg-nord-3 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(76 86 106 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -705,6 +718,10 @@ video {
   padding-left: 0px;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -732,6 +749,11 @@ video {
   line-height: 2rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -757,22 +779,67 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-nord-3 {
+  --tw-shadow-color: #4C566A;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-nord-3\/50 {
+  --tw-shadow-color: rgb(76 86 106 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-nord-7\/50 {
+  --tw-shadow-color: rgb(143 188 187 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-nord-13 {
+  --tw-shadow-color: #EBCB8B;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .hover\:bg-nord-13:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(235 203 139 / var(--tw-bg-opacity));
 }
 
-.hover\:hover\:bg-teal-900\/50:hover:hover {
-  background-color: rgb(19 78 74 / 0.5);
+.hover\:bg-nord-7:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(143 188 187 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-teal-700\/80:hover {
   background-color: rgb(15 118 110 / 0.8);
-}
-
-.hover\:bg-nord-7:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(143 188 187 / var(--tw-bg-opacity));
 }
 
 .hover\:text-nord-7:hover {
@@ -803,6 +870,31 @@ video {
 .dark .dark\:text-nord-13 {
   --tw-text-opacity: 1;
   color: rgb(235 203 139 / var(--tw-text-opacity));
+}
+
+.dark .dark\:shadow-white {
+  --tw-shadow-color: #fff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:shadow-white\/50 {
+  --tw-shadow-color: rgb(255 255 255 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:shadow-white\/20 {
+  --tw-shadow-color: rgb(255 255 255 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.dark .dark\:shadow-black\/50 {
+  --tw-shadow-color: rgb(0 0 0 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .dark .dark\:hover\:bg-nord-7:hover {
@@ -843,10 +935,6 @@ video {
     gap: 2rem;
   }
 
-  .sm\:scroll-smooth {
-    scroll-behavior: smooth;
-  }
-
   .sm\:pl-20 {
     padding-left: 5rem;
   }
@@ -874,9 +962,5 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
   }
 }
