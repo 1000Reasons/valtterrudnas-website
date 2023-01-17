@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'darkmode': "URL('./build/img/dark-mode.png')",
-        'lightmode': "URL('/build/img/light-mode.png')",
+        'darkmode': "URL('./img/dark-mode.png')",
+        'lightmode': "URL('/img/light-mode.png')",
       },
       fontFamily: {"Inter": "sans-serif"},
       colors: {
