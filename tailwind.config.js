@@ -5,6 +5,10 @@ module.exports = {
   content: ["./build/*.html", "./build/js/*.js"],
   theme: {
     extend: {
+      backgroundImage: {
+        'darkmode': "URL('/build/img/dark-mode.png')",
+        'lightmode': "URL('/build/img/light-mode.png')",
+      },
       fontFamily: {"Inter": "sans-serif"},
       colors: {
         "nord": {

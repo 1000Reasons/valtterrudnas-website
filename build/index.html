@@ -20,154 +20,215 @@
     </script>
 </head>
 
-<body class="min-h-screen font-Inter text-nord-3 bg-slate-50 dark:text-nord-6 dark:bg-nord-0">
-    <header class="dark:bg-nord-0 bg-slate-50 top-0 z-10 font-bold sticky sm:relative shadow sm:shadow-none">
-        <section class="text-black dark:text-nord-6 max-w-4xl mx-auto p-4 flex justify-between items-center">
-            <h1 class="text-3xl font-bold">
-                <a href="#hero">Valter Rudnäs</a>
-            </h1>
-            <div class="flex justify-center gap-8 text-center">
-                <div class="align-middle">
-                    <p class="p-2 hidden sm:block dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg">
-                        Curriculum Vitae
+<body class="min-h-screen font-Inter text-nord-3 dark:bg-nord-0 bg-white dark:text-nord-6">
+    <div class="bg-contain bg-no-repeat [background-position-y:730px] bg-fixed sm:bg-bottom sm:bg-fixed bg-lightmode dark:bg-darkmode">
+        <header class="dark:bg-nord-0 bg-slate-50 top-0 z-10 font-bold sticky sm:relative shadow sm:shadow-none">
+            <section class="text-black dark:text-nord-6 max-w-4xl mx-auto p-4 flex justify-between items-center">
+                <h1 class="sm:text-3xl text-2xl font-bold">
+                    <a href="#hero">Valter Rudnäs</a>
+                </h1>
+                <div class="flex justify-center sm:gap-8 gap-1 text-center">
+                    <div id="links" class="flex items-center justify-center gap-2">
+                        <a href="https://www.linkedin.com/in/valter-rudnas" class="flex items-center rounded-md p-1.5 text-nord-7 hover:text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="https://github.com/1000Reasons" class="flex items-center rounded-md p-1.5 text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="mailto:valter.rudnas@gmail.com" class="flex items-center rounded-md p-1.5 text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="Mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </a>
+                    </div>
+                    <div class="align-middle">
+                        <p class="p-2 hidden sm:block dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg">
+                            Curriculum Vitae
+                        </p>
+                    </div>
+                    <button id="theme-toggle" class="hover:bg-nord-7 p-2.5 rounded-lg align-middle" type="button">
+                        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </header>
+        <main class="max-w-4xl mx-auto">
+            <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center sm:gap-8 gap-6 scroll-mt-40">
+                <article class="sm:w-1/2">
+                    <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left">
+                        We Boldly Go Where No <span class="text-nord-7 dark:text-nord-13">Rocket</span> Has Gone Before
+                    </h2>
+                    <p class="max-w-md text-2xl mt-4 text-center sm:text-left ">
+                        We're building rockets for the next generation, today. From the moon to Mars, Jupiter and beyond.
                     </p>
-                </div>
-                <button id="theme-toggle" class="hover:bg-nord-7 p-2.5 rounded-lg align-middle" type="button">
-                    <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-                    </svg>
-                    <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                            fill-rule="evenodd" clip-rule="evenodd"></path>
-                    </svg>
-                </button>
+                    <p class="max-w-md text-2xl mt-4 text-center sm:text-left ">
+                        Think Acme Rockets
+                    </p>
+                </article>
+                <img class="rounded-full relative sm:w-80 w-60" src="./img/cv (Medium).JPG" alt="">
+            </section>
+            <div id="mobile-CV" class="flex justify-center sm:hidden p-6">
+                <p class="shadow p-2 font-bold text-black dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg shadow-nord-3/50 dark:shadow-black/50">Curriculum Vitae</p>
             </div>
-        </section>
-    </header>
-    <main class="max-w-4xl mx-auto">
-        <section id="hero" class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center sm:gap-8 gap-6 scroll-mt-40">
-            <article class="sm:w-1/2">
-                <h2 class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left">
-                    We Boldly Go Where No <span class="text-nord-7 dark:text-nord-13">Rocket</span> Has Gone Before
-                </h2>
-                <p class="max-w-md text-2xl mt-4 text-center sm:text-left ">
-                    We're building rockets for the next generation, today. From the moon to Mars, Jupiter and beyond.
-                </p>
-                <p class="max-w-md text-2xl mt-4 text-center sm:text-left ">
-                    Think Acme Rockets
-                </p>
-            </article>
-            <img class="rounded-full relative sm:w-80 w-60" src="./img/cv (Medium).JPG" alt="">
-        </section>
-        <div id="links" class="flex items-center justify-center sm:justify-start pl-0 sm:pl-20 gap-2">
-            <a href="https://www.linkedin.com/in/valter-rudnas" class="flex items-center rounded-md p-1.5 text-nord-7 hover:text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="LinkedIn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="https://github.com/1000Reasons" class="flex items-center rounded-md p-1.5 text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-            <a href="mailto:valter.rudnas@gmail.com" class="flex items-center rounded-md p-1.5 text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="Mail">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-            </a>
-        </div>
-        <div class="flex justify-center sm:hidden p-6">
-            <p class="p-2 font-bold text-black dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg">Curriculum Vitae</p>
-        </div>
-        <div>
-            <section id="experience" class="p-6 my-12">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6">
-                    Experience
-                </h2>
-                <div class="flex flex-col lg:flex-row justify-center text-center gap-8">
-                    <div class="rounded-3xl -mb-8 mt-8 lg:order-2 order-1  shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
-                        <div class="flex justify-center p-8">
-                            <svg width="128" viewBox="0 0 256 257" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M201.685 25.373C170.902-1.2 102.79-14.364 51.748 23.787c-47.885 32.1-50.253 90.771-50.253 90.771 8.156 32.1 40.518 62.883 102.873 47.886-7.366-43.15 7.072-152.33 97.317-137.07z" fill="#00ACD2"/><path d="M169.62 129.733C135.935 157.688 33.402 200.345 1.495 114.56c-7.622 39.946 13.529 106.431 72.089 131.56 51.742 25.42 105.664-4.02 105.664-4.02 23.72-23.113 34.538-65.864-9.628-112.367" fill="#C8E9EB"/><path d="M108.779 90.524c41.052 15.195 128.807 81.05 70.469 151.576 38.405-13.373 83.44-64.54 75.922-127.818-3.856-57.52-53.484-88.907-53.484-88.907-31.876-8.986-74.717 3.649-92.907 65.149" fill="#662D91"/></svg>
-                        </div>
-                        <div>
-                            <p class="font-bold text-2xl">
-                                Appium
+                <section id="experience" class="p-6 my-24">
+                    <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6">
+                        Experience
+                    </h2>
+                    <div class="flex flex-col lg:flex-row justify-center text-center gap-8  text-nord-6">
+                        <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl sm:-mb-8 sm:mt-8 lg:order-1 order-2  shadow-nord-3/50 dark:shadow-black/50 shadow-2xl ">
+                            <div class="flex justify-center p-8">
+                                <img src="/build/img/logos/appium-logo.png" width="96" alt="">
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl">
+                                    Appium
+                                </p>
+                            </div>
+                            <p class="p-8">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
                             </p>
+                            <div class="">
+                            </div>
                         </div>
-                        <p class="p-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
-                        </p>
-                        <div class="">
-                        </div>
-                    </div>
-                    <div class="rounded-3xl lg:order-2 order-1 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
-                        <div class="flex justify-center p-8">
-                            <svg width="128" viewBox="0 0 256 257" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M201.685 25.373C170.902-1.2 102.79-14.364 51.748 23.787c-47.885 32.1-50.253 90.771-50.253 90.771 8.156 32.1 40.518 62.883 102.873 47.886-7.366-43.15 7.072-152.33 97.317-137.07z" fill="#00ACD2"/><path d="M169.62 129.733C135.935 157.688 33.402 200.345 1.495 114.56c-7.622 39.946 13.529 106.431 72.089 131.56 51.742 25.42 105.664-4.02 105.664-4.02 23.72-23.113 34.538-65.864-9.628-112.367" fill="#C8E9EB"/><path d="M108.779 90.524c41.052 15.195 128.807 81.05 70.469 151.576 38.405-13.373 83.44-64.54 75.922-127.818-3.856-57.52-53.484-88.907-53.484-88.907-31.876-8.986-74.717 3.649-92.907 65.149" fill="#662D91"/></svg>
-                        </div>
-                        <div>
-                            <p class="font-bold text-2xl">
-                                Robot Framework
+                        <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-2 order-1 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="flex justify-center p-8">
+                                <img src="/build/img/logos/Robot-framework-logo.png" width="96" alt="">
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl">
+                                    Robot Framework
+                                </p>
+                            </div>
+                            <p class="p-8">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
                             </p>
+                            <div class="">
+                            </div>
                         </div>
-                        <p class="p-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
-                        </p>
-                        <div class="">
-                        </div>
-                    </div>
-                    <div class="rounded-3xl -mb-16 mt-16 lg:order-2 order-1 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
-                        <div class="flex justify-center p-8">
-                            <svg width="128" viewBox="0 0 256 257" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M201.685 25.373C170.902-1.2 102.79-14.364 51.748 23.787c-47.885 32.1-50.253 90.771-50.253 90.771 8.156 32.1 40.518 62.883 102.873 47.886-7.366-43.15 7.072-152.33 97.317-137.07z" fill="#00ACD2"/><path d="M169.62 129.733C135.935 157.688 33.402 200.345 1.495 114.56c-7.622 39.946 13.529 106.431 72.089 131.56 51.742 25.42 105.664-4.02 105.664-4.02 23.72-23.113 34.538-65.864-9.628-112.367" fill="#C8E9EB"/><path d="M108.779 90.524c41.052 15.195 128.807 81.05 70.469 151.576 38.405-13.373 83.44-64.54 75.922-127.818-3.856-57.52-53.484-88.907-53.484-88.907-31.876-8.986-74.717 3.649-92.907 65.149" fill="#662D91"/></svg>
-                        </div>
-                        <div>
-                            <p class="font-bold text-2xl">
-                                Selenium
+                        <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl sm:-mb-16 sm:mt-16 lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="flex justify-center p-8">
+                                <img src="/build/img/logos/Selenium_Logo.png" width="96" alt="">
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl">
+                                    Selenium
+                                </p>
+                            </div>
+                            <p class="p-8">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
                             </p>
-                        </div>
-                        <p class="p-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
-                        </p>
-                        <div class="">
+                            <div class="">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="work experience" class="p-6 my-12">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
-                    Work experience
-                </h2>
-                <div class="border rounded-3xl p-4">
-                    <div class="flex justify-start gap-8">
-                        <p>
-                            KWH Mirka Oy
-                        </p>
-                        <p>
-                            Junior Software Trainee
-                        </p>
-                        <p>
-                            2022-Current
-                        </p>
+                </section>
+                <section id="work experience" class="">
+                    <h2 class="text-4xl font-bold text-center sm:text-5xl">
+                        Work experience
+                    </h2>
+                    <div class="grid-rows-3 grid gap-8 my-8 text-nord-6">
+                        <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="font-bold text-xl">
+                                <p>
+                                    KWH Mirka Oy <span class="text-nord-7 dark:text-nord-13">Junior Software Tester</span> 2022-Current
+                                </p>
+                            </div>
+                            <div class="pt-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="font-bold text-xl">
+                                <p>
+                                    KWH Mirka <span class="text-nord-7 dark:text-nord-13">IT Trainee</span> 5/2022 - 8/2022
+                                </p>
+                            </div>
+                            <div class="pt-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="font-bold text-xl">
+                                <p>
+                                    ScandicTrans Oy <span class="text-nord-7 dark:text-nord-13">Software Instructor</span> 2018-2019
+                                </p>
+                            </div>
+                            <div class="pt-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pt-4">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
-                        </p>
+                    <h3 class="text-3xl font-bold text-center sm:text-4xl">
+                        Other experience
+                    </h3>
+                    <div class="grid-rows-3 grid gap-8 my-8 text-nord-6">
+                        <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="font-bold text-xl">
+                                <p>
+                                    Head of Communications Merkantila Klubben rf. 2022
+                                </p>
+                            </div>
+                            <div class="pt-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="font-bold text-xl">
+                                <p>
+                                    KWH Mirka <span class="text-nord-7 dark:text-nord-13">IT Trainee</span> 5/2022 - 8/2022
+                                </p>
+                            </div>
+                            <div class="pt-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
+                            <div class="font-bold text-xl">
+                                <p>
+                                    ScandicTrans Oy <span class="text-nord-7 dark:text-nord-13">Software Instructor</span> 2018-2019
+                                </p>
+                            </div>
+                            <div class="pt-4">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam debitis exercitationem soluta nobis totam corrupti! Sint deserunt accusamus, dolore nam eius aspernatur earum harum accusantium, incidunt commodi vitae. Vero, blanditiis?
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <section id="education" class="p-6 my-12">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
-                    Education
-                </h2>
-            </section>
-            <section id="other" class="p-6 my-12">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
-                    Other
-                </h2>
-            </section>
-            <section id="contact" class="p-6 my-12">
-                <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
-                    Contact me
-                </h2>
-            </section>
-        </div>
-    </main>
+                </section>
+                <section id="education" class="p-6 my-12">
+                    <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
+                        Education
+                    </h2>
+                </section>
+                <section id="other" class="p-6 my-12">
+                    <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
+                        Other
+                    </h2>
+                </section>
+                <section id="contact" class="p-6 my-12">
+                    <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 ">
+                        Contact me
+                    </h2>
+                </section>
+        </main>
+    </div>
 </body>
 </html>
