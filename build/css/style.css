@@ -693,7 +693,7 @@ video {
 }
 
 .bg-lightmode {
-  background-image: URL('./build/img/light-mode.png');
+  background-image: URL('light-mode.png');
 }
 
 .bg-contain {
@@ -851,7 +851,7 @@ video {
 }
 
 .dark .dark\:bg-darkmode {
-  background-image: URL('/build/img/dark-mode.png');
+  background-image: URL('dark-mode.png');
 }
 
 .dark .dark\:text-nord-6 {
