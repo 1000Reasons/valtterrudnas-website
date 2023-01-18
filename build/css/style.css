@@ -693,7 +693,7 @@ video {
 }
 
 .bg-lightmode {
-  background-image: URL('/build/img/light-mode.png');
+  background-image: URL('./build/img/light-mode.png');
 }
 
 .bg-contain {
