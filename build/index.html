@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valter Rudnäs</title>
     <link rel="stylesheet" href="build/css/style.css">
-    <!-- <link rel="preload" as="image" href="build/css/dark-mode.png">
-    <link rel="preload" as="image" href="build/css/light-mode.png"> -->
+    <link rel="preload" as="image" href="/build/css/dark-mode.png">
+    <link rel="preload" as="image" href="/build/css/light-mode.png">
     <script src="/build/js/main.js" defer></script>
     <script>
         if (
@@ -25,7 +25,7 @@
 
 <body class="min-h-screen font-Inter text-nord-3 dark:bg-nord-0 bg-slate-50 dark:text-nord-6">
     <div class="bg-contain bg-no-repeat [background-position-y:430px] bg-fixed sm:bg-bottom sm:bg-fixed bg-lightmode dark:bg-darkmode">
-        <header class="dark:bg-nord-0 bg-slate-50 top-0 z-10 font-bold sticky sm:relative shadow sm:shadow-none">
+        <header class="dark:bg-nord-0 bg-slate-50 top-0 z-10 font-bold sticky drop-shadow-md shadow-nord-3/50 dark:shadow-black/50">
             <section class="text-black dark:text-nord-6 max-w-4xl mx-auto p-4 flex justify-between items-center">
                 <h1 class="sm:text-3xl text-2xl font-bold">
                     <a href="#hero">Valter Rudnäs</a>
@@ -38,15 +38,12 @@
                         <a href="https://github.com/1000Reasons" class="flex items-center rounded-md p-1.5 text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="GitHub">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         </a>
-                        <a href="" class="flex items-center rounded-md p-1.5 text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="Mail">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        </a>
                     </div>
-                    <div class="align-middle">
+                    <a class="align-middle" href="/build/img/CV2023-valter-rudnas.pdf" download>
                         <p class="p-2 hidden sm:block dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg">
                             Curriculum Vitae
                         </p>
-                    </div>
+                    </a>
                     <button id="theme-toggle" class="hover:bg-nord-7 p-2.5 rounded-lg align-middle" type="button">
                         <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +69,7 @@
                         Enthusiastic student that likes to learn.
                     </p>
                     <p class="max-w-md text-2xl mt-4 text-center sm:text-left ">
-                        Experience in Robot framework, Appium, Selenium, Azure DevOps, Python, HTML5, Tailwind CSS and more!
+                        Experience in Robot framework, Appium, Selenium, Azure DevOps, Python, HTML5, Tailwind CSS, Arduino, web-hosting and more!
                     </p>
                 </article>
                 <img class="rounded-full relative sm:w-80 w-60" src="build/img/cv (Medium).JPG" alt="">
@@ -86,7 +83,7 @@
                 </h2>
                 <div class="flex flex-col lg:flex-row justify-center text-center gap-8  text-nord-6">
                     <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl sm:-mb-8 sm:mt-8 lg:order-1 order-2  shadow-nord-3/50 dark:shadow-black/50 shadow-2xl basis-1/3 ">
-                        <div class="flex justify-center p-8">
+                        <div class="flex justify-center p-6">
                             <img src="build/img/logos/appium-logo.png" width="96" alt="">
                         </div>
                         <div>
@@ -94,14 +91,14 @@
                                 Appium
                             </p>
                         </div>
-                        <p class="p-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
+                        <p class="p-6">
+                            I was recently moved to a new project where I was placed in charge of figuring out how to best automate testing in the company's mobile applications. After extensive research we settled on Appium and are beginning development of both Android and iOS application test automation with the Robot Framework library to allow cross-compatibility of test automation.
                         </p>
                         <div class="">
                         </div>
                     </div>
                     <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-2 order-1 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl basis-1/3">
-                        <div class="flex justify-center p-8">
+                        <div class="flex justify-center p-6">
                             <img src="build/img/logos/Robot-framework-logo.png" width="96" alt="">
                         </div>
                         <div>
@@ -109,14 +106,14 @@
                                 Robot Framework
                             </p>
                         </div>
-                        <p class="p-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
+                        <p class="p-6">
+                            I have gotten a broad understanding of, and knowledge in, Robot Framework from my work as a Junior Software Tester. I was the first software tester to move over to Robot Framework and was in charge of setting up the company's initial Azure Pipeline for it's automated testing and prepared material for the other developers in my department.
                         </p>
                         <div class="">
                         </div>
                     </div>
                     <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl sm:-mb-16 sm:mt-16 lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl basis-1/3">
-                        <div class="flex justify-center p-8">
+                        <div class="flex justify-center p-6">
                             <img src="build/img/logos/Selenium_Logo.png" width="96" alt="">
                         </div>
                         <div>
@@ -124,8 +121,8 @@
                                 Selenium
                             </p>
                         </div>
-                        <p class="p-8">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam architecto eos voluptatem ipsa, illo quidem sit suscipit inventore vero enim fugit expedita. Deserunt eum consequuntur exercitationem blanditiis iusto beatae similique.
+                        <p class="p-6">
+                            As I was the first developer to move over to Robot Framework I don't have as extensive knowledge in Selenium as compared to Robot Framework. I however have a good grasp of the basics and a lot of my knowledge from Robot Framework can be applied to Selenium, and the overall mindset of automatic testing also applies.
                         </p>
                         <div class="">
                         </div>
@@ -159,7 +156,7 @@
                         </div>
                         <div class="pt-4">
                             <p>
-                                I was personally in charge of updating the company's SSRS Reports from SSRS-2005 to SSRS-2019. Other tasks included building new reports in SSRS, database cleaning and maintenance in Microsoft SQL Server and general IT Support.
+                                In charge of updating the company's SSRS Reports from SSRS-2005 to SSRS-2019. Other tasks included building new reports in SSRS, database cleaning and maintenance in Microsoft SQL Server and general IT Support. I also developed extensive Excel spreadsheets for project budgeting follow-up.
                             </p>
                         </div>
                     </div>
@@ -172,9 +169,7 @@
                         </div>
                         <div class="pt-4">
                             <p>
-                            I was responsible for training and helping the company's drivers in using the new logistics software the company had recently switched to. I organized individual and group sessions where I taught them the basics of the new system and how to keep the application updated on their phones.  
-                            <br>
-                            I also gathered feedback about the new application from the drivers and presented it to the developers.
+                            I was responsible for training and helping the company's drivers in using the new logistics software the company had recently implemented. I organized individual and group sessions where I taught the drivers the basics of the new system and how to install and keep the application updated on their phones. I also gathered feedback about the new application from the drivers and presented it to the developers.
                             </p>
                         </div>
                     </div>
@@ -199,13 +194,13 @@
                     <div class="p-8 dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl">
                         <div class="font-bold text-2xl sm:flex flex-row sm:justify-between gap-4 text-center sm:text-left">
                             <p>
-                                <span class="text-nord-7 dark:text-nord-13">Adminsitration</span> <br class="block sm:hidden"> Sportsclub Nykarleby 
+                                <span class="text-nord-7 dark:text-nord-13">Administration</span> <br class="block sm:hidden"> Sportsclub Nykarleby 
                             </p>
                             <p>10/2017 - 04/2018</p>
                         </div>
                         <div class="pt-4">
                             <p>
-                                I attended to new and old customers at the gym reception and was responsible for cleaning and general maintenace at the club. I also managed customer memberships and gym access.
+                                I attended to new and old customers at the gym reception and was responsible for cleaning and general maintenace at the club. I also managed customer memberships and gym access and was in regular contact with customers about our equipment and basic guidance in how to use it.
                             </p>
                         </div>
                     </div>
@@ -218,7 +213,7 @@
                         </div>
                         <div class="pt-4">
                             <p>
-                                I have a lot of other experience working in a wide variety of job sectors. Among other things <span class="text-nord-7 dark:text-nord-13">I have been a teachers assistant, finnish and math teacher in a school in my hometown, a pizza chef and a cleaner</span>. I will gladly talk about any of these things so please ask me about my previous job experience!
+                                I have a lot of other experience working in a wide variety of job sectors. Among other things <span class="text-nord-7 dark:text-nord-13">I have been a teachers assistant, finnish and math teacher for elementary aged kids, a pizza chef and a cleaner</span>. I will gladly talk about any of these things so please ask me about my previous job experience!
                             </p>
                         </div>
                     </div>
@@ -345,7 +340,7 @@
                                     <svg width="3" height="24" viewBox="0 -9 3 24" class="mr-2 dark:text-nord-13 text-nord-7 overflow-visible">
                                         <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
                                     </svg>
-                                    Custom keyboard enthusiast
+                                    Custom keyboard enthusiast, photographer, history buff
                                 </div>
                             </li>
                             <li class="ml-4">
@@ -353,7 +348,7 @@
                                     <svg width="3" height="24" viewBox="0 -9 3 24" class="mr-2 dark:text-nord-13 text-nord-7 overflow-visible">
                                         <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
                                     </svg>
-                                    Things I want to learn in 2023: Kubernetes, Figma, Firebase &#38; ReactJS
+                                    <p>Things I want to learn in 2023: <span class="font-bold">Kubernetes, Figma, Firebase &#38; ReactJS</span></p>
                                 </div>
                             </li>
                         </ul>
@@ -367,9 +362,6 @@
                             class="hover:underline">Valter Rudnäs</a>. All Rights Reserved. <br class="sm:hidden block"> Made with Tailwind CSS and &#10084;
                     </span>
                     <div class="flex justify-center gap-6 text-sm text-[#5c7ca5] dark:text-[#c27e69] font-bold">
-                        <p>
-                            <a href="#" class="text-base hover:underline">Contact</a>
-                        </p>
                         <p>
                             <a href="#hero" class="text-base hover:underline">Back to top</a>
                         </p>
