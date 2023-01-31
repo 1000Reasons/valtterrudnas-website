@@ -1,15 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <base href="/">
+    <base href="/build/">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Valter Rudnäs">
+    <meta name="description" content="Quality Assurance & Test Automation">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.valterrudnas.com/">
+    <meta property="og:title" content="Valter Rudnäs">
+    <meta property="og:description" content="Quality Assurance & Test Automation">
+    <meta property="og:image" content="./img/logos/valter-rudnas-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.valterrudnas.com/">
+    <meta property="twitter:title" content="Valter Rudnäs">
+    <meta property="twitter:description" content="Quality Assurance & Test Automation">
+    <meta property="twitter:image" content="./img/logos/valter-rudnas-logo.png">
+
     <title>Valter Rudnäs</title>
-    <link rel="stylesheet" href="build/css/style.css">
-    <link rel="preload" as="image" href="/build/css/dark-mode.png">
-    <link rel="preload" as="image" href="/build/css/light-mode.png">
-    <script src="/build/js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" as="image" href="./css/dark-mode.png">
+    <link rel="preload" as="image" href="./css/light-mode.png">
+    <link rel="preload" as="image" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="./js/main.js" defer></script>
     <script>
         if (
             localStorage.getItem('color-theme') === 'dark' ||
@@ -27,9 +53,12 @@
     <div class="bg-contain bg-no-repeat [background-position-y:430px] bg-fixed sm:bg-bottom sm:bg-fixed bg-lightmode dark:bg-darkmode">
         <header class="dark:bg-nord-0 bg-slate-50 top-0 z-10 font-bold sticky drop-shadow-md shadow-nord-3/50 dark:shadow-black/50">
             <section class="text-black dark:text-nord-6 max-w-4xl mx-auto p-4 flex justify-between items-center">
-                <h1 class="sm:text-3xl text-2xl font-bold">
-                    <a href="#hero">Valter Rudnäs</a>
-                </h1>
+                <div class="flex gap-4">
+                    <img src="/favicon.ico" alt="logo" width="40" height="40" class="filter invert dark:invert-0">
+                    <h1 class="sm:text-3xl text-2xl font-bold">
+                        <a href="#hero" class="align-middle">Valter Rudnäs</a>
+                    </h1>
+                </div>
                 <div class="flex justify-center sm:gap-8 gap-1 text-center">
                     <div id="links" class="flex items-center justify-center gap-2">
                         <a href="https://www.linkedin.com/in/valter-rudnas" class="flex items-center rounded-md p-1.5 text-nord-7 hover:text-nord-7 hover:bg-teal-700/80 dark:text-nord-13" title="LinkedIn">
@@ -39,7 +68,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                         </a>
                     </div>
-                    <a class="align-middle" href="/build/img/CV2023-valter-rudnas.pdf" download>
+                    <a class="align-middle" href="./img/CV2023-valter-rudnas.pdf" download>
                         <p class="p-2 hidden sm:block dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg">
                             Curriculum Vitae
                         </p>
@@ -72,7 +101,7 @@
                         Experience in Robot framework, Appium, Selenium, Azure DevOps, Python, HTML5, Tailwind CSS, Arduino, web-hosting and more!
                     </p>
                 </article>
-                <img class="rounded-full relative sm:w-80 w-60" src="build/img/cv (Medium).JPG" alt="">
+                <img class="rounded-full relative sm:w-80 w-60" src="./img/cv (Medium).JPG" alt="">
             </section>
             <div id="mobile-CV" class="flex justify-center sm:hidden p-6">
                 <p class="shadow p-2 font-bold text-black dark:bg-nord-13 bg-nord-7 hover:bg-nord-13 dark:text-nord-0 dark:hover:bg-nord-7 rounded-lg shadow-nord-3/50 dark:shadow-black/50">Curriculum Vitae</p>
@@ -84,7 +113,7 @@
                 <div class="flex flex-col lg:flex-row justify-center text-center gap-8  text-nord-6">
                     <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl sm:-mb-8 sm:mt-8 lg:order-1 order-2  shadow-nord-3/50 dark:shadow-black/50 shadow-2xl basis-1/3 ">
                         <div class="flex justify-center p-6">
-                            <img src="build/img/logos/appium-logo.png" width="96" alt="">
+                            <img src="./img/logos/appium-logo.png" width="96" alt="">
                         </div>
                         <div>
                             <p class="font-bold text-2xl">
@@ -99,7 +128,7 @@
                     </div>
                     <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl lg:order-2 order-1 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl basis-1/3">
                         <div class="flex justify-center p-6">
-                            <img src="build/img/logos/Robot-framework-logo.png" width="96" alt="">
+                            <img src="./img/logos/Robot-framework-logo.png" width="96" alt="">
                         </div>
                         <div>
                             <p class="font-bold text-2xl">
@@ -114,7 +143,7 @@
                     </div>
                     <div class="dark:bg-nord-3/60 bg-nord-3/80 rounded-3xl sm:-mb-16 sm:mt-16 lg:order-3 order-3 shadow-nord-3/50 dark:shadow-black/50 shadow-2xl basis-1/3">
                         <div class="flex justify-center p-6">
-                            <img src="build/img/logos/Selenium_Logo.png" width="96" alt="">
+                            <img src="./img/logos/Selenium_Logo.png" width="96" alt="">
                         </div>
                         <div>
                             <p class="font-bold text-2xl">
